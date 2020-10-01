@@ -1,0 +1,11 @@
+print("Hola Mundo")
+#comentario
+"""
+comentario
+etendido
+"""
+if 10<12:
+	print("")
+	print("")
+else:
+	print("else")
