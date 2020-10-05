@@ -24,6 +24,7 @@ class PasswordWindow(Gtk.Window):
             print("Correcta. Cerrando ventana...")
             Gtk.main_quit()
         else:
+            
             window = Gtk.Window(title="Contraseña Incorrecta")
             window.show()
             window.connect("destroy", Gtk.main_quit)
