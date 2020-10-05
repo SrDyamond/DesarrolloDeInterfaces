@@ -7,12 +7,23 @@ class PasswordWindow(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title="Contraseña")
 
+        hbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        self.add(hbox)
+
+        hbox.pack_start(vbox_left, True, True, 0)
+        hbox.pack_start(vbox_right, True, True, 0)
+
+        label = Gtk.Label(label="This is a normal label")
+        hbox.pack_start(label, True, True, 0)
+
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         self.add(vbox)
-
+        
         self.entry = Gtk.Entry()
         self.entry.set_text("Introduzca su contraseña")
+        self.entry.set_visibility(False)
         vbox.pack_start(self.entry, True, True, 0)
+
 
         button = Gtk.Button(label="Aceptar")
         button.connect("clicked", self.on_button_clicked)
@@ -23,8 +34,10 @@ class PasswordWindow(Gtk.Window):
             print("Correcta. Cerrando ventana...")
             Gtk.main_quit()
         else:
-            print("Incorrecta")
-
+            window = Gtk.Window(title="FailPass")
+            window.show()
+            window.connect("destroy", Gtk.main_quit)
+            Gtk.main()
 window = PasswordWindow()
 window.connect("destroy", Gtk.main_quit)
 window.show_all()
