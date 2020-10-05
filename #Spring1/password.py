@@ -45,6 +45,7 @@ class PasswordWindow(Gtk.Window):
 
                         self.entry = Gtk.Entry()
                         self.entry.set_text("Fallo en la contraseña")
+                        self.entry.set_editable(False)
                         vbox.pack_start(self.entry, True, True, 0)
 
                         hbox = Gtk.Box(spacing=6)
