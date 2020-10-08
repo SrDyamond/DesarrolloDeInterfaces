@@ -9,7 +9,7 @@ class PasswordWindow(Gtk.Window):
 
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         self.add(vbox)
-
+#con self puedes reutilizar la variable
         self.entry = Gtk.Entry()
         self.entry.set_text("Introduzca su contraseña")
         vbox.pack_start(self.entry, True, True, 0)
