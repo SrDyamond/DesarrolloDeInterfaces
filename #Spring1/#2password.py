@@ -2,6 +2,8 @@ import gi
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
+from password_fail.py import PasswordFail
+from password_ok.py import PasswordOk
 
 class PasswordWindow(Gtk.Window):
     def __init__(self):
@@ -33,41 +35,15 @@ class PasswordWindow(Gtk.Window):
 
     def on_button_clicked(self, widget):
         if self.entry.get_text() == "pass":
-            class PasswordOk(Gtk.Window):
-                def __init__(self):
-                        Gtk.Window.__init__(self, title="Contraseña Correcta")
-
-                        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
-                        self.add(vbox)
-
-                        self.entry = Gtk.Entry()
-                        self.entry.set_text("Contraseña correcta")
-                        self.entry.set_editable(False)
-                        vbox.pack_start(self.entry, True, True, 0)
-
-            window = PasswordOk()
-            window.show_all()
+        window = PasswordOk()
+        window.show_all()
+        Gtk.main()
         else:
-            class PasswordFail(Gtk.Window):
-                def __init__(self):
-                        Gtk.Window.__init__(self, title="ERROR")
+        window = PasswordFail()
+        window.show_all()
 
-                        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
-                        self.add(vbox)
+        Gtk.main()
 
-                        self.entry = Gtk.Entry()
-                        self.entry.set_text("Fallo en la contraseña")
-                        self.entry.set_editable(False)
-                        vbox.pack_start(self.entry, True, True, 0)
-
-            window = PasswordFail()
-            window.show_all()
-
-            Gtk.main()
-            #    window = Gtk.Window(title="Fail Password")
-            #    window.show()
-            #    window.connect("destroy", Gtk.main_quit)
-            #    Gtk.main()
 window = PasswordWindow()
 window.connect("destroy", Gtk.main_quit)
 window.show_all()
