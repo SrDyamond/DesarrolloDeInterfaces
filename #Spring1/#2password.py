@@ -9,7 +9,7 @@ class PasswordWindow(Gtk.Window):
 
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         self.add(vbox)
-#con self puedes reutilizar la variable
+
         self.entry = Gtk.Entry()
         self.entry.set_text("Introduzca su contraseña")
         vbox.pack_start(self.entry, True, True, 0)
@@ -33,8 +33,20 @@ class PasswordWindow(Gtk.Window):
 
     def on_button_clicked(self, widget):
         if self.entry.get_text() == "pass":
-            print("Correcta. Cerrando ventana...")
-            Gtk.main_quit()
+            class PasswordOk(Gtk.Window):
+                def __init__(self):
+                        Gtk.Window.__init__(self, title="Contraseña Correcta")
+
+                        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+                        self.add(vbox)
+
+                        self.entry = Gtk.Entry()
+                        self.entry.set_text("Contraseña correcta")
+                        self.entry.set_editable(False)
+                        vbox.pack_start(self.entry, True, True, 0)
+
+            window = PasswordOk()
+            window.show_all()
         else:
             class PasswordFail(Gtk.Window):
                 def __init__(self):
@@ -49,7 +61,6 @@ class PasswordWindow(Gtk.Window):
                         vbox.pack_start(self.entry, True, True, 0)
 
             window = PasswordFail()
-            window.connect("destroy", Gtk.main_quit)
             window.show_all()
 
             Gtk.main()
