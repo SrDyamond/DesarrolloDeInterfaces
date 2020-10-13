@@ -1,0 +1,34 @@
+[
+   {
+      "CiudadOrigen": "Bilbao",
+      "CiudadDestino": "Toledo",
+      "ListaParadas": {
+         "Parada": {
+            "Ciudad": "Madrid",
+            "TiempoDescanso": "60"
+         }
+      },
+      "TiempoViaje": "340"
+   },
+   {
+      "CiudadOrigen": "Alicante",
+      "CiudadDestino": "Murcia",
+      "ListaParadas": [],
+      "TiempoViaje": "140"
+   },
+   {
+      "CiudadOrigen": "Santiago de Compostela",
+      "CiudadDestino": "Santander",
+      "ListaParadas": [
+         {
+            "Ciudad": "Lugo",
+            "TiempoDescanso": "30"
+         },
+         {
+            "Ciudad": "Oviedo",
+            "TiempoDescanso": "60"
+         }
+      ],
+      "TiempoViaje": "280"
+   }
+]
