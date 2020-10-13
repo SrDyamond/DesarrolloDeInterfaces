@@ -18,6 +18,7 @@ class PasswordWindow(Gtk.Window):
         self.entry = Gtk.Entry()
         box.pack_start(self.entry, True, True, 0)
         self.entry.set_visibility(False)
+
         button = Gtk.Button(label="Aceptar")
         button.connect("clicked", self.on_button_clicked)
         box.pack_start(button, True, True, 0)
