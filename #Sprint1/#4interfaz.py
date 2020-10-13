@@ -5,7 +5,7 @@ from gi.repository import Gtk
 class MyWindow(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title="Producto")
-        boxprincipal = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=30)
+        boxprincipal = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=30)
         self.add(boxprincipal)
 
         abox = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=5)
@@ -22,7 +22,7 @@ class MyWindow(Gtk.Window):
         image.set_from_file("tarjeta.PNG")
         bbox.pack_start(image, True, True, 50)
 
-    
+
 
 
 win = MyWindow()
