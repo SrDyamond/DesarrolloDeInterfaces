@@ -8,10 +8,10 @@ class MyWindow(Gtk.Window):
         scrolled = Gtk.ScrolledWindow()
         scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
         self.add(scrolled)
-
+        #inicializao a box principal
         boxprincipal = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=30)
         scrolled.add(boxprincipal)
-
+        #init boxes
         abox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=5)
         boxprincipal.add(abox)
 
@@ -26,10 +26,7 @@ class MyWindow(Gtk.Window):
 
         ebox= Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=5)
         boxprincipal.add(ebox)
-
-
-
-        #caja a
+        #box a
         image = Gtk.Image()
         image.set_from_file("nombre.PNG")
         abox.pack_start(image, True, True, 50)
@@ -37,7 +34,7 @@ class MyWindow(Gtk.Window):
         image = Gtk.Image()
         image.set_from_file("ref.PNG")
         abox.pack_start(image, True, True, 50)
-        #caja b
+        #box b
         image = Gtk.Image()
         image.set_from_file("tarjeta.PNG")
         bbox.pack_start(image, True, True, 50)
@@ -48,20 +45,25 @@ class MyWindow(Gtk.Window):
         #espacio en blanco
         #title = Gtk.Label()
         #dbox.pack_start(title, True, False, 0)
-        #caja c
+        #box c
         button = Gtk.Button(label="Comprar")
-        #button.connect("clicked", self.on_button_clicked)
-        gtk_button_set_image("comprar.PNG")
+        button.connect("clicked", self.on_button_clicked)
         cbox.pack_start(button, True, True, 0)
 
         button = Gtk.Button(label="Agregar al carrito")
-        #button.connect("clicked", self.on_button_clicked)
+        button.connect("clicked", self.on_button1_clicked)
         cbox.pack_start(button, True, True, 0)
 
-        #caja d
+        #box d
         image = Gtk.Image()
         image.set_from_file("caracteristicas.PNG")
         dbox.pack_start(image, True, True, 50)
+
+    def on_button_clicked(self, widget):
+        print("Comprado")
+
+    def on_button1_clicked(self, widget):
+        print("Agregado al carrito")
 
 
 win = MyWindow()
