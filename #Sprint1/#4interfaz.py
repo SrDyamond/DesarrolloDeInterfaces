@@ -46,11 +46,20 @@ class MyWindow(Gtk.Window):
         #title = Gtk.Label()
         #dbox.pack_start(title, True, False, 0)
         #box c
-        button = Gtk.Button(label="Comprar")
+        comprar=Gtk.Image()
+        comprar.set_from_file("comprar.PNG")
+        button=Gtk.Button()
+        button.add(comprar)
+        button.set_size_request(50,50)
         button.connect("clicked", self.on_button_clicked)
         cbox.pack_start(button, True, True, 0)
 
-        button = Gtk.Button(label="Agregar al carrito")
+        carrito=Gtk.Image()
+        carrito.set_from_file("carrito.PNG")
+        button.set_size_request(50,50)
+        button = Gtk.Button()
+        button.add(carrito)
+        button.set_size_request(50,50)
         button.connect("clicked", self.on_button1_clicked)
         cbox.pack_start(button, True, True, 0)
 
