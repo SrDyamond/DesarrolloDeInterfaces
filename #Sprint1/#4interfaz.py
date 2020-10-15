@@ -5,43 +5,45 @@ from gi.repository import Gtk
 class MyWindow(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title="Producto")
+        self.set_default_size(600, 450)
+        self.set_border_width(30)
         scrolled = Gtk.ScrolledWindow()
         scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
         self.add(scrolled)
         #inicializao a box principal
-        boxprincipal = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=30)
+        boxprincipal = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
         scrolled.add(boxprincipal)
         #init boxes
-        abox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=5)
+        abox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
         boxprincipal.add(abox)
 
-        bbox = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=5)
+        bbox = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
         boxprincipal.add(bbox)
 
-        cbox= Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=5)
+        cbox= Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
         boxprincipal.add(cbox)
 
-        dbox= Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=5)
+        dbox= Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
         boxprincipal.add(dbox)
 
-        ebox= Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=5)
+        ebox= Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
         boxprincipal.add(ebox)
         #box a
         image = Gtk.Image()
         image.set_from_file("nombre.PNG")
-        abox.pack_start(image, True, True, 50)
+        abox.pack_start(image, True, True, 10)
 
         image = Gtk.Image()
         image.set_from_file("ref.PNG")
-        abox.pack_start(image, True, True, 50)
+        abox.pack_start(image, True, True, 10)
         #box b
         image = Gtk.Image()
         image.set_from_file("tarjeta.PNG")
-        bbox.pack_start(image, True, True, 50)
+        bbox.pack_start(image, True, True, 10)
 
         image = Gtk.Image()
         image.set_from_file("precio.PNG")
-        bbox.pack_start(image, True, True, 50)
+        bbox.pack_start(image, True, True, 10)
         #espacio en blanco
         #title = Gtk.Label()
         #dbox.pack_start(title, True, False, 0)
@@ -50,18 +52,18 @@ class MyWindow(Gtk.Window):
         comprar.set_from_file("comprar.PNG")
         button=Gtk.Button()
         button.add(comprar)
-        button.set_size_request(50,50)
+        #button.set_size_request(50,50)
         button.connect("clicked", self.on_button_clicked)
-        cbox.pack_start(button, True, True, 0)
+        cbox.pack_start(button, True, False, 0)
 
         carrito=Gtk.Image()
         carrito.set_from_file("carrito.PNG")
-        button.set_size_request(50,50)
+        #button.set_size_request(50,50)
         button = Gtk.Button()
         button.add(carrito)
         button.set_size_request(50,50)
         button.connect("clicked", self.on_button1_clicked)
-        cbox.pack_start(button, True, True, 0)
+        cbox.pack_start(button, True, False, 0)
 
         #box d
         image = Gtk.Image()
