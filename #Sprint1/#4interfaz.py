@@ -29,21 +29,21 @@ class MyWindow(Gtk.Window):
         ebox= Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
         boxprincipal.add(ebox)
         #box a
-        image = Gtk.Image()
-        image.set_from_file("nombre.PNG")
-        abox.pack_start(image, True, True, 10)
+        titulo = Gtk.Label()
+        titulo.set_markup('<span size="xx-large" weight="bold">Geforce RTX 3070</span>')
+        abox.pack_start(titulo, True, True, 10)
 
-        image = Gtk.Image()
-        image.set_from_file("ref.PNG")
-        abox.pack_start(image, True, True, 10)
+        ref = Gtk.Label()
+        ref.set_markup('<span size="xx-large" weight="bold">REF-3645741</span>')
+        abox.pack_start(ref, True, True, 10)
         #box b
         image = Gtk.Image()
         image.set_from_file("tarjeta.PNG")
         bbox.pack_start(image, True, True, 10)
 
-        image = Gtk.Image()
-        image.set_from_file("precio.PNG")
-        bbox.pack_start(image, True, True, 10)
+        precio = Gtk.Label()
+        precio.set_markup('<span size="xx-large" weight="bold">899 Euros</span>')
+        bbox.pack_start(precio, True, True, 10)
         #espacio en blanco
         #title = Gtk.Label()
         #dbox.pack_start(title, True, False, 0)
