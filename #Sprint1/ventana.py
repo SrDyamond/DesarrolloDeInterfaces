@@ -9,6 +9,6 @@ class Ventana(Gtk.Window):
 		box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
 		self.add(box)
 
-		button = Gtk.Button(label="Aceptar")
+		button = Gtk.Button(label="Boton Activable")
 		#button.connect("clicked", self.on_button_clicked)
 		box.pack_start(button, True, True, 0)

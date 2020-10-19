@@ -1,13 +1,25 @@
 Ejercicio 1.1
-
+---------------------------
 ¿Qué hace la llamada Gtk.main?
 -Ejecuta el codigo main.
+
 ¿Por qué se añade la línea window.connect("destroy", Gtk.main_quit)?
 -Para cuando se cierra la ventana se acaba la ejecucion del programa.
 
 Ejercicio 1.2
+---------------------------
 ¿Cuál es la funcionalidad que añade nuestra clase Ventana?
 ¿Dónde ves aparecer siempre la ventana que se crea?
--Nos crea una ventana siempre en medio de la pantalla.
 
-Ejercicio 1.3
+Nos crea una ventana siempre en medio de la pantalla.
+
+Ejercicio 2.1
+-----------------------------
+¿Qué significa que la señal "clicked" sea emitida cuando el usuario hace click sobre el botón?
+-Que cuando se pulse el boton se active el metodo vinculado al boton.
+
+¿Cómo conectamos dicha señal a un método de la clase Ventana para que el
+método se ejecute al clickar el botón?
+
+-Con esta linea de codigo
+#button.connect("clicked", self.on_button_clicked)
