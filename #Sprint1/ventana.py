@@ -10,6 +10,7 @@ class Ventana(Gtk.Window):
 		self.add(box)
 
 		button = Gtk.Button(label="Boton Activable")
+		button.set_size_request(300, 150)
 		button.connect("clicked", self.on_button_clicked)
 		box.pack_start(button, True, True, 0)
 
