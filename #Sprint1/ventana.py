@@ -15,6 +15,6 @@ class Ventana(Gtk.Window):
 
 		box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
 		self.add(box)
-		box.pack_start(image1, False, False, 0)
-		box.pack_start(image2, False, False, 0)
-		box.pack_start(image3, False, False, 0)
+		box.pack_start(image1, True, False, 0)
+		box.pack_start(image2, True, False, 0)
+		box.pack_start(image3, True, False, 0)
