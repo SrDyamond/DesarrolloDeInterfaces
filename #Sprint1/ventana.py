@@ -6,6 +6,8 @@ class Ventana(Gtk.Window):
 	def __init__(self):
 		Gtk.Window.__init__(self)
 		self.set_position(Gtk.WindowPosition.CENTER)
+		self.set_default_size(100, 200)
+		self.set_resizable(False)
 		image1 = Gtk.Image()
 		image1.set_from_file("penguin.jpg")
 		image2 = Gtk.Image()
@@ -14,7 +16,11 @@ class Ventana(Gtk.Window):
 		image3.set_from_file("jiraffe.jpg")
 
 		box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
-		self.add(box)
-		box.pack_start(image1, True, False, 0)
-		box.pack_start(image2, True, False, 0)
-		box.pack_start(image3, True, False, 0)
+		box.pack_start(image1, True, True, 0)
+		box.pack_start(image2, True, True, 0)
+		box.pack_start(image3, True, True, 0)
+
+		scrolled = Gtk.ScrolledWindow()
+		scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
+		self.add(scrolled)
+		scrolled.add(box)
