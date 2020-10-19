@@ -9,7 +9,7 @@ class Ventana(Gtk.Window):
 		box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
 		self.add(box)
 
-		button = Gtk.Button(label="Boton Activable")
+		button = Gtk.CheckButton(label="Boton Activable")
 		button.set_size_request(300, 150)
 		button.connect("clicked", self.on_button_clicked)
 		box.pack_start(button, True, True, 0)
