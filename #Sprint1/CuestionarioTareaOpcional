@@ -61,3 +61,8 @@ Ejercicio 5.1
  -Esta delimitado a 50 puntos con esta linea #label.set_max_width_chars(50)
  ¿Se reparte el espacio equitativamente entre ambos componentes cuando agrandas lo suficiente?
  -El boton cuando esta fullscreen es mas pequeño que el Label
+
+Ejercicio 5.5
+--------------------------------
+¿Cómo se comporta la ventana cuando la agrandas?
+-El label y el button se quedan siempre en la misma posicion.

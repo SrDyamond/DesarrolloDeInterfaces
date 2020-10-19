@@ -9,6 +9,7 @@ class Ventana(Gtk.Window):
 		label = Gtk.Label(label = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
 		label.set_line_wrap(True)
 		label.set_max_width_chars(50)
+		label.set_size_request(200, 50)
 		label.set_justify(Gtk.Justification.FILL)
 
 		button = Gtk.Button(label = "Pulsa")
@@ -17,4 +18,4 @@ class Ventana(Gtk.Window):
 		box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
 		self.add(box)
 		box.pack_start(label, False, False, 0)
-		box.pack_start(button, True, True, 0)
+		box.pack_start(button, False, False, 0)
