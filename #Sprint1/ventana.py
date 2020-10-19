@@ -14,4 +14,4 @@ class Ventana(Gtk.Window):
 		label.set_justify(Gtk.Justification.FILL)
 		label.set_max_width_chars(50)
 		label.set_size_request(300, 150)
-		box.pack_start(label, True, True, 0)
+		box.pack_start(label, False, False, 0)
