@@ -52,3 +52,12 @@ Ejercicio 5.1
  ¿Qué es lo que pasa?
 
  -Al agrandarlo se queda en la izquierda
+
+ Ejercicio 5.3
+ ------------------------------
+ ¿Qué sucede cuando agrandas la ventana horizontalmente?
+ -El label no crece mas de 50 caracteres.
+ ¿Por qué el label no crece más allá de 50 caracteres de ancho?
+ -Esta delimitado a 50 puntos con esta linea #label.set_max_width_chars(50)
+ ¿Se reparte el espacio equitativamente entre ambos componentes cuando agrandas lo suficiente?
+ -El boton cuando esta fullscreen es mas pequeño que el Label

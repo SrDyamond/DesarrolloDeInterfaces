@@ -5,13 +5,16 @@ from gi.repository import Gtk
 class Ventana(Gtk.Window):
 	def __init__(self):
 		Gtk.Window.__init__(self)
-		self.set_position(Gtk.WindowPosition.MOUSE)
-		box = Gtk.Box()
-		self.add(box)
-
-		label = Gtk.Label(label = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
+		self.set_position(Gtk.WindowPosition.CENTER)
+		label = Gtk.Label(label = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
 		label.set_line_wrap(True)
-		label.set_justify(Gtk.Justification.FILL)
 		label.set_max_width_chars(50)
-		label.set_size_request(300, 150)
-		box.pack_end(label, False, False, 0)
+		label.set_justify(Gtk.Justification.FILL)
+
+		button = Gtk.Button(label = "Pulsa")
+		button.set_size_request(50, 50)
+
+		box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
+		self.add(box)
+		box.pack_start(label, True, False, 0)
+		box.pack_start(button, True, True, 0)
