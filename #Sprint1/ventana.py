@@ -18,4 +18,4 @@ class Ventana(Gtk.Window):
 		box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
 		self.add(box)
 		box.pack_start(label, False, False, 0)
-		box.pack_start(button, False, False, 0)
+		box.pack_end(button, False, False, 0)
