@@ -11,8 +11,11 @@ class Ventana(Gtk.Window):
 
 		button = Gtk.CheckButton(label="Boton Activable")
 		button.set_size_request(300, 150)
-		button.connect("clicked", self.on_button_clicked)
+		button.connect("clicked", self.ha_clicado)
 		box.pack_start(button, True, True, 0)
 
-	def on_button_clicked(self, widget):
-		print("El usuario ha hecho click")
+	def ha_clicado(self, widget):
+			if widget.get_active() == True:
+				print("El checkButton ha sido marcado")
+			else:
+				print("El checkButton ha sido desmarcado")
