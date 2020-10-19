@@ -40,3 +40,9 @@ Ejercicio 4.4
 --------------------------------
 
 El texto si se adapta a la anchura de la ventana
+
+Ejercicio 4.5
+-------------------------------
+¿Cuál es la justificación por defecto del texto si no se usa la línea set_justify?
+
+-La justificacion por defecto es a la izquierda.
