@@ -10,5 +10,8 @@ class Ventana(Gtk.Window):
 		self.add(box)
 
 		button = Gtk.Button(label="Boton Activable")
-		#button.connect("clicked", self.on_button_clicked)
+		button.connect("clicked", self.on_button_clicked)
 		box.pack_start(button, True, True, 0)
+
+	def on_button_clicked(self, widget):
+		print("El usuario ha hecho click")
