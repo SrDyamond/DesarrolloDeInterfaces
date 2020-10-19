@@ -23,3 +23,9 @@ método se ejecute al clickar el botón?
 
 -Con esta linea de codigo
 #button.connect("clicked", self.on_button_clicked)
+
+Ejercicio 2.2
+--------------------------------
+¿Qué sucede? ¿Puede crecer la ventana más allá del tamaño solicitado por el botón? ¿Puede decrecer?
+
+-Puede aumentar pero no decrecer.
