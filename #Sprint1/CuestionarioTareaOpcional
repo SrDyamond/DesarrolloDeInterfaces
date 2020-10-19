@@ -1,0 +1,9 @@
+Ejercicio 1.1
+
+¿Qué hace la llamada Gtk.main?
+-Ejecuta el codigo main.
+¿Por qué se añade la línea window.connect("destroy", Gtk.main_quit)?
+-Para cuando se cierra la ventana se acaba la ejecucion del programa.
+
+Ejercicio 1.2
+-
