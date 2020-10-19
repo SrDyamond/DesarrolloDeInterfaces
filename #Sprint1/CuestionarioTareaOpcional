@@ -29,3 +29,9 @@ Ejercicio 2.2
 ¿Qué sucede? ¿Puede crecer la ventana más allá del tamaño solicitado por el botón? ¿Puede decrecer?
 
 -Puede aumentar pero no decrecer.
+
+Ejercicio 3.1
+---------------------------------
+¿Cuál es la diferencia?
+
+Ahora pinta un boton de check,y se ejecuta siempre que clicas.
