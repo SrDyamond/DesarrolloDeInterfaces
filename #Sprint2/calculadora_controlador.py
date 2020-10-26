@@ -12,56 +12,12 @@ class Controlador:
 	# Metodos que responden a las acciones del usuario
 
 	# Botones numericos
-
-	def ha_pulsado_0(self, widget):
+	def ha_pulsado(self, widget,pulsado):
+		posicion = pulsado
+		print (posicion)
 		self._limpiar_pantalla_si_es_necesario()
 		texto_actual = self.label_resultado.get_text()
-		self.label_resultado.set_text(texto_actual + "0")
-
-	def ha_pulsado_1(self, widget):
-		self._limpiar_pantalla_si_es_necesario()
-		texto_actual = self.label_resultado.get_text()
-		self.label_resultado.set_text(texto_actual + "1")
-
-	def ha_pulsado_2(self, widget):
-		self._limpiar_pantalla_si_es_necesario()
-		texto_actual = self.label_resultado.get_text()
-		self.label_resultado.set_text(texto_actual + "2")
-
-	def ha_pulsado_3(self, widget):
-		self._limpiar_pantalla_si_es_necesario()
-		texto_actual = self.label_resultado.get_text()
-		self.label_resultado.set_text(texto_actual + "3")
-
-	def ha_pulsado_4(self, widget):
-		self._limpiar_pantalla_si_es_necesario()
-		texto_actual = self.label_resultado.get_text()
-		self.label_resultado.set_text(texto_actual + "4")
-
-	def ha_pulsado_5(self, widget):
-		self._limpiar_pantalla_si_es_necesario()
-		texto_actual = self.label_resultado.get_text()
-		self.label_resultado.set_text(texto_actual + "5")
-
-	def ha_pulsado_6(self, widget):
-		self._limpiar_pantalla_si_es_necesario()
-		texto_actual = self.label_resultado.get_text()
-		self.label_resultado.set_text(texto_actual + "6")
-
-	def ha_pulsado_7(self, widget):
-		self._limpiar_pantalla_si_es_necesario()
-		texto_actual = self.label_resultado.get_text()
-		self.label_resultado.set_text(texto_actual + "7")
-
-	def ha_pulsado_8(self, widget):
-		self._limpiar_pantalla_si_es_necesario()
-		texto_actual = self.label_resultado.get_text()
-		self.label_resultado.set_text(texto_actual + "8")
-
-	def ha_pulsado_9(self, widget):
-		self._limpiar_pantalla_si_es_necesario()
-		texto_actual = self.label_resultado.get_text()
-		self.label_resultado.set_text(texto_actual + "9")
+		self.label_resultado.set_text(texto_actual + str(posicion) )
 
 	# Botones de coma decimal y borrado
 
