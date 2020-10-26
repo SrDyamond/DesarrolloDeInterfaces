@@ -13,11 +13,10 @@ class Controlador:
 
 	# Botones numericos
 	def ha_pulsado(self, widget,pulsado):
-		posicion = pulsado
-		print (posicion)
+		pulsado = pulsado
 		self._limpiar_pantalla_si_es_necesario()
 		texto_actual = self.label_resultado.get_text()
-		self.label_resultado.set_text(texto_actual + str(posicion) )
+		self.label_resultado.set_text(texto_actual + str(pulsado) )
 
 	# Botones de coma decimal y borrado
 
