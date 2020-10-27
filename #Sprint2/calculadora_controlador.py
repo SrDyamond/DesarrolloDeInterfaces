@@ -38,35 +38,13 @@ class Controlador:
 
 	# Botones de operacion
 
-	def ha_pulsado_sumar(self, widget):
+	def ha_pulsado_op(self, widget,operacion):
+		operacion=operacion;
+		#print(operacion)
 		self.ha_pulsado_operacion_o_igual = True
 		self._operar_y_mostrar_resultado_si_es_necesario()
 		self.primer_operando = float(self.label_resultado.get_text())
-		self.operacion_pulsada = "+"
-
-	def ha_pulsado_restar(self, widget):
-		self.ha_pulsado_operacion_o_igual = True
-		self._operar_y_mostrar_resultado_si_es_necesario()
-		self.primer_operando = float(self.label_resultado.get_text())
-		self.operacion_pulsada = "-"
-
-	def ha_pulsado_multiplicar(self, widget):
-		self.ha_pulsado_operacion_o_igual = True
-		self._operar_y_mostrar_resultado_si_es_necesario()
-		self.primer_operando = float(self.label_resultado.get_text())
-		self.operacion_pulsada = "*"
-
-	def ha_pulsado_dividir(self, widget):
-		self.ha_pulsado_operacion_o_igual = True
-		self._operar_y_mostrar_resultado_si_es_necesario()
-		self.primer_operando = float(self.label_resultado.get_text())
-		self.operacion_pulsada = "/"
-
-	def ha_pulsado_igual(self, widget):
-		self.ha_pulsado_operacion_o_igual = True
-		self._operar_y_mostrar_resultado_si_es_necesario()
-		self.primer_operando = None
-		self.operacion_pulsada = None
+		self.operacion_pulsada = str(operacion)
 
 	# Metodos de uso preferiblemente privado
 
