@@ -74,13 +74,12 @@
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <child>
-                      <object class="GtkLabel">
+                      <object class="GtkSearchEntry">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">Carrito</property>
-                        <attributes>
-                          <attribute name="font-desc" value="Segoe Script Bold 10"/>
-                        </attributes>
+                        <property name="can_focus">True</property>
+                        <property name="primary_icon_name">edit-find-symbolic</property>
+                        <property name="primary_icon_activatable">False</property>
+                        <property name="primary_icon_sensitive">False</property>
                       </object>
                     </child>
                   </object>
