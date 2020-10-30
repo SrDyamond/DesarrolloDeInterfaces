@@ -72,7 +72,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\160397778485428921.png</property>
+                            <property name="pixbuf">fotoscatalogo\160397778485428921.png</property>
                           </object>
                         </child>
                       </object>
@@ -85,7 +85,7 @@
                   </object>
                   <packing>
                     <property name="expand">False</property>
-                    <property name="fill">True</property>
+                    <property name="fill">False</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -121,7 +121,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\reservas (1).png</property>
+                            <property name="pixbuf">fotoscatalogo\reservas (1).png</property>
                           </object>
                         </child>
                       </object>
@@ -134,7 +134,7 @@
                   </object>
                   <packing>
                     <property name="expand">False</property>
-                    <property name="fill">True</property>
+                    <property name="fill">False</property>
                     <property name="padding">1</property>
                     <property name="position">2</property>
                   </packing>
@@ -144,7 +144,7 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="margin_bottom">19</property>
-                    <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\onlinedef.png</property>
+                    <property name="pixbuf">fotoscatalogo\onlinedef.png</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -184,7 +184,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\lotus_mediana_l18650_3 (2).png</property>
+                            <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -196,7 +196,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\boton-reservar (1).png</property>
+                            <property name="pixbuf">fotoscatalogo\boton-reservar (1).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -226,7 +226,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\lotus_mediana_l18650_3 (2).png</property>
+                            <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -238,7 +238,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\boton-reservar (1).png</property>
+                            <property name="pixbuf">fotoscatalogo\boton-reservar (1).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -268,7 +268,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\lotus_mediana_l18650_3 (2).png</property>
+                            <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -280,7 +280,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\boton-reservar (1).png</property>
+                            <property name="pixbuf">fotoscatalogo\boton-reservar (1).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -310,7 +310,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\lotus_mediana_l18650_3 (2).png</property>
+                            <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -322,7 +322,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\boton-reservar (1).png</property>
+                            <property name="pixbuf">fotoscatalogo\boton-reservar (1).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -436,7 +436,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\lotus_mediana_l18650_3 (2).png</property>
+                            <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -448,7 +448,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\boton-reservar (1).png</property>
+                            <property name="pixbuf">fotoscatalogo\boton-reservar (1).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -478,7 +478,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\lotus_mediana_l18650_3 (2).png</property>
+                            <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -490,7 +490,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\boton-reservar (1).png</property>
+                            <property name="pixbuf">fotoscatalogo\boton-reservar (1).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -520,7 +520,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\lotus_mediana_l18650_3 (2).png</property>
+                            <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -532,7 +532,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\boton-reservar (1).png</property>
+                            <property name="pixbuf">fotoscatalogo\boton-reservar (1).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -562,7 +562,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\lotus_mediana_l18650_3 (2).png</property>
+                            <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -574,7 +574,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\boton-reservar (1).png</property>
+                            <property name="pixbuf">fotoscatalogo\boton-reservar (1).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
