@@ -352,7 +352,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\lotus_mediana_l18650_3 (2).png</property>
+                            <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -364,7 +364,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\boton-reservar (1).png</property>
+                            <property name="pixbuf">fotoscatalogo\boton-reservar (1).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -394,7 +394,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\lotus_mediana_l18650_3 (2).png</property>
+                            <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -406,7 +406,7 @@
                           <object class="GtkImage">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="pixbuf">..\..\..\..\..\Users\Lenovo\Downloads\boton-reservar (1).png</property>
+                            <property name="pixbuf">fotoscatalogo\boton-reservar (1).png</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
