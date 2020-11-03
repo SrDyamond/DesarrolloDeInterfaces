@@ -150,7 +150,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="margin_bottom">19</property>
-                        <property name="pixbuf">fotoscatalogo\onlinedef.png</property>
+                        <property name="pixbuf">fotoscatalogo\descarga.jpg</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
