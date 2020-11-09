@@ -10,9 +10,8 @@ builder.add_from_file("catalogo.glade")
 
 class Catalogo (Gtk.Window):
     def __init__(self):
-        print("clic")
         Gtk.Window.__init__(self, title="Catalogo")
-		
+
         boton_reservas = builder.get_object("Boton_Reservas")
         boton_reservas.connect("clicked", self.on_button1_clicked)
 
