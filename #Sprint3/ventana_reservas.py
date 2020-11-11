@@ -12,7 +12,6 @@ class Reservas(Gtk.Window):
     def mostrarReservas(self):
         builder = Gtk.Builder()
         builder.add_from_file("reservas.glade")
-        
-        print("123")
+
         window = builder.get_object("window")
         window.show_all()
