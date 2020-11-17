@@ -13,6 +13,7 @@ def pedir_productos(numero, ventana):
 	else:
 		ventana.label.set_text("La petición ha fallado")
 
+
 class Ventana(Gtk.Window):
 	def __init__(self):
 		Gtk.Window.__init__(self, title="")
