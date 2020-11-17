@@ -26,7 +26,7 @@ def cargar_productos(flowbox):
 	for producto in productos:
 		nombre = producto.get("name")
 		referencia = producto.get("reference")
-		url_imagen = producto.get("imagePath")
+		url_imagen = producto.get("imagenPath")
 		imagen = descargar_imagen(url_imagen)
 		celda = CeldaProducto(nombre, referencia, imagen)
 		celdas.append(celda)
