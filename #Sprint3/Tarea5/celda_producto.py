@@ -1,7 +1,7 @@
 import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
-
+from ventana_producto import Producto
 class CeldaProducto(Gtk.Button):
 	def __init__(self, nombre, referencia, imagen):
 		Gtk.Button.__init__(self)
@@ -11,7 +11,4 @@ class CeldaProducto(Gtk.Button):
 		box.pack_start(Gtk.Label(label=referencia), False, False, 0)
 
 		self.add(box)
-		self.connect("clicked", self.se_ha_clicado)
-
-	def se_ha_clicado(self, widget):
-		print("Ha clicado")
+		self.connect("clicked", Producto.mostrarProducto)

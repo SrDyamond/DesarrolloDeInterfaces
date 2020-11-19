@@ -16,7 +16,7 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
-              <object class="GtkFlowBox">
+              <object class="GtkFlowBox" id="flowboxproducto">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
               </object>
