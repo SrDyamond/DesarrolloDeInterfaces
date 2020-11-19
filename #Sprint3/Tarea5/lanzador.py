@@ -22,7 +22,7 @@ def un_producto(numero,ventana):
 		ventana.label.set_text("La petición ha fallado")
 
 def pedir_reserva(numero,ventana):
-	url = 'http://localhost:8080/developer/reserve'
+	url = 'http://localhost:8080/developer/reserve?passwordSha=9d4e1e23bd5b727046a9e3b4b7db57bd8d6ee684'
 	response = requests.get(url)
 	if response.ok:
 		ventana.label.set_text(str(response.json()))
@@ -39,11 +39,11 @@ class Ventana(Gtk.Window):
 		self.label.set_margin_top(50)
 		self.label.set_margin_start(100)
 		self.label.set_margin_end(100)
-		#x = threading.Thread(target=pedir_productos, args=(1,self))
-		#y = threading.Thread(target=un_producto, args=(2,self))
+		x = threading.Thread(target=pedir_productos, args=(1,self))
+		y = threading.Thread(target=un_producto, args=(2,self))
 		z = threading.Thread(target=pedir_reserva, args=(3,self))
-		#x.start()
-		#y.start()
+		x.start()
+		y.start()
 		z.start()
 
 
