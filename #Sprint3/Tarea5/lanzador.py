@@ -13,6 +13,22 @@ def pedir_productos(numero, ventana):
 	else:
 		ventana.label.set_text("La petición ha fallado")
 
+def un_producto(numero,ventana):
+	url = 'http://localhost:8080/product/R-001'
+	response = requests.get(url)
+	if response.ok:
+		ventana.label.set_text(str(response.json()))
+	else:
+		ventana.label.set_text("La petición ha fallado")
+
+def pedir_reserva(numero,ventana):
+	url = 'http://localhost:8080/developer/reserve'
+	response = requests.get(url)
+	if response.ok:
+		ventana.label.set_text(str(response.json()))
+		#preguntar si puede devolver u njson array
+	else:
+		ventana.label.set_text("La petición ha fallado")
 
 class Ventana(Gtk.Window):
 	def __init__(self):
@@ -23,8 +39,12 @@ class Ventana(Gtk.Window):
 		self.label.set_margin_top(50)
 		self.label.set_margin_start(100)
 		self.label.set_margin_end(100)
-		x = threading.Thread(target=pedir_productos, args=(1,self))
-		x.start()
+		#x = threading.Thread(target=pedir_productos, args=(1,self))
+		#y = threading.Thread(target=un_producto, args=(2,self))
+		z = threading.Thread(target=pedir_reserva, args=(3,self))
+		#x.start()
+		#y.start()
+		z.start()
 
 
 ###############################
