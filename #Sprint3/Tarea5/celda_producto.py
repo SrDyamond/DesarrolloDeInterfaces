@@ -2,6 +2,7 @@ import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
 from ventana_producto import Producto
+
 class CeldaProducto(Gtk.Button):
 	def __init__(self, nombre, referencia, imagen):
 		Gtk.Button.__init__(self)
