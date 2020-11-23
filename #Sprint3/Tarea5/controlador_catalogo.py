@@ -5,7 +5,6 @@ gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GLib
 from cliente_rest import ClienteRest
 from celda_producto import CeldaProducto
-from ventana_producto import Producto
 import shutil
 
 def descargar_imagen(url_imagen):
@@ -18,29 +17,11 @@ def descargar_imagen(url_imagen):
 	return imagen
 
 """
-"""
-def cargar_producto(flowbox):
-	cliente = ClienteRest()
-	productos = cliente.solicitar_producto().json()
-	celdas = []
-	for producto in productos:
-		nombre = producto.get("name")
-		referencia = producto.get("reference")
-		url_imagen = producto.get("imagenPath")
-		imagen = descargar_imagen(url_imagen)
-		celda = CeldaProducto(nombre, referencia, imagen)
-		celdas.append(celda)
-
-	GLib.idle_add(mostrar_productos_ui_thread, flowbox, celdas)
-
-
-
-"""
 Carga los productos del API REST.
 """
-def cargar_productos(flowbox,ref):
+def cargar_productos(flowbox):
 	cliente = ClienteRest()
-	productos = cliente.solicitar_lista_productos(ref).json()
+	productos = cliente.solicitar_lista_productos().json()
 	celdas = []
 	for producto in productos:
 		nombre = producto.get("name")
@@ -63,7 +44,5 @@ def mostrar_productos_ui_thread(flowbox, celdas_productos):
 class CatalogoControlador():
 	def __init__(self, objeto_constructor):
 		contenedor = objeto_constructor.get_object("contenedor_productos")
-		hilo1 = threading.Thread(target=cargar_productos, args=(contenedor,))
-		hilo1.start()
-		hilo2 = threading.Thread(target=cargar_producto, args=(contenedor,))
-		hilo2.start()
+		hilo = threading.Thread(target=cargar_productos, args=(contenedor,))
+		hilo.start()
