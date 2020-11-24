@@ -11,10 +11,12 @@ class CeldaProducto(Gtk.Button):
 		box.pack_start(Gtk.Label(label=nombre), False, False, 0)
 		box.pack_start(Gtk.Label(label=referencia), False, False, 0)
 		self.ref=referencia
+		self.imagen=imagen
+		self.nombre=nombre
 
 		self.add(box)
 		self.connect("clicked", self.se_ha_clicado)
 
 	def se_ha_clicado(self, widget):
-		window=Producto(self.ref)
+		window=Producto(self.ref,self.imagen,self.nombre)
 		window.show_all()
