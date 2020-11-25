@@ -28,7 +28,7 @@ def cargar_productos(flowbox):
 		referencia = producto.get("reference")
 		url_imagen = producto.get("imagenPath")
 		imagen = descargar_imagen(url_imagen)
-		celda = CeldaProducto(nombre, referencia, imagen)
+		celda = CeldaProducto(nombre, referencia, imagen,url_imagen)
 		celdas.append(celda)
 
 	GLib.idle_add(mostrar_productos_ui_thread, flowbox, celdas)
