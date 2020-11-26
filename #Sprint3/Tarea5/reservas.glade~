@@ -96,7 +96,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="margin_left">90</property>
-                        <property name="pixbuf">fotoscatalogo\descarga (1).jpg</property>
+                        <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -114,7 +114,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">13000 Euros</property>
+                            <property name="label" translatable="yes">135,99 euros</property>
                             <attributes>
                               <attribute name="font-desc" value="Segoe Script Bold 10"/>
                             </attributes>
@@ -182,7 +182,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="margin_left">90</property>
-                        <property name="pixbuf">fotoscatalogo\descarga (1).jpg</property>
+                        <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -200,7 +200,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">13000 Euros</property>
+                            <property name="label" translatable="yes">135,99 euros</property>
                             <attributes>
                               <attribute name="font-desc" value="Segoe Script Bold 10"/>
                             </attributes>
@@ -268,7 +268,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="margin_left">80</property>
-                        <property name="pixbuf">fotoscatalogo\descarga (1).jpg</property>
+                        <property name="pixbuf">fotoscatalogo\lotus_mediana_l18650_3 (2).png</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -286,7 +286,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">13000 Euros</property>
+                            <property name="label" translatable="yes">135,99 euros</property>
                             <attributes>
                               <attribute name="font-desc" value="Segoe Script Bold 10"/>
                             </attributes>
